@@ -7,7 +7,7 @@ const EXPECT = { 'Beirut':15,'Kuwait City':16,'Cairo':14,'Dubai':15,'Riyadh':16,
   const p = await (await b.newContext({viewport:{width:1440,height:900}})).newPage();
   const errs = [];
   p.on('pageerror', e => errs.push(e.message));
-  await p.goto('http://127.0.0.1:8942/index.html', {waitUntil:'networkidle'});
+  await p.goto('http://127.0.0.1:8943/coverage.html', {waitUntil:'networkidle'});
   await p.waitForSelector('.readout .row');
   let pass = 0, fail = 0;
   for (const [name, want] of Object.entries(EXPECT)){

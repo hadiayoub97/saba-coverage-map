@@ -1,3 +1,7 @@
 shot-*.png
 node_modules/
 .test/
+compete.js
+home-check.js
+live-check.js
+mob-check.js
